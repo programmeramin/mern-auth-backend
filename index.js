@@ -16,10 +16,10 @@ const app = express();
 const __dirname = path.resolve();
 
 
-app.use(cors({
- origin: ["https://mern-auth-frontend-xsgb.vercel.app"],
- method: ["GET", "POST"]
- credentials: true}));
+//app.use(cors({
+// origin: "https://mern-auth-frontend-xsgb.vercel.app",
+// method: ["GET", "POST"]
+// credentials: true}));
  
 
 //middleware
