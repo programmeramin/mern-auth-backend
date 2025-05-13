@@ -31,6 +31,10 @@ app.use(cookieParser()); // Allow us to parse cookie-parser
 // routes
 app.use("/api/auth", authRouter);
 
+app.get("/", (req, res) =>{
+res.json("Hello World")
+})
+
 // production build route
 // if(process.env.NODE_ENV === "production"){
 //     app.use(express.static(path.join(__dirname, "/frontend/dist"))); 
